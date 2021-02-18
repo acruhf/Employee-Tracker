@@ -1,0 +1,22 @@
+{
+  "name": "employee-tracker",
+  "version": "1.0.0",
+  "description": "A CLI for Managing Employee Data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acruhf/Employee-Tracker.git"
+  },
+  "author": "Austin Ruhf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/acruhf/Employee-Tracker/issues"
+  },
+  "homepage": "https://github.com/acruhf/Employee-Tracker#readme",
+  "dependencies": {
+    "console.table": "^0.10.0"
+  }
+}

@@ -17,10 +17,9 @@ INSERT INTO role (title, salary, department_id) VALUES
     ('Software Engineer', 76000, 4),
     ('Tech Support', 48000, 4);
 
-INSERT INTO employee (first_name, last_name, role_id) VALUES
-    ('Bobson', 'Dugnutt', 1);
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES
+    ('Bobson', 'Dugnutt', 1, null);
     ('Sleve', 'McDichael', 2, 1),
     ('Onson', 'Sweemey', 3, 2),
     ('Darryl', 'Archideld', 3, 2),
@@ -38,4 +37,3 @@ INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES
     ('Kevin', 'Nogilny', 8, 12),
     ('Todd', 'Bonzalez', 9, 12),
     ('Tony', 'Smehirk', 9, 12),
-    ('Eleanore', 'Leonard', 9, 12);
