@@ -4,7 +4,7 @@
 
   ## **Description**
   
-  A Content Management System for Tracking Employee Data
+  A Content Management System for Tracking Employee Data. Keeps Track of Departments, Job Titles & Salaries, and the Employees and their Managers. New employees, job titles, departments, can all be added or eliminated from the database.
   
   
   ***
@@ -13,8 +13,6 @@
   * [Description](#Description)
   * [Installation](#Installation)
   * [Usage](#Usage)
-  * [Testing](#tests)
-  * [Contributions](#contributions)
   * [License](#license)
   * [Questions](#Questions)
   
@@ -31,17 +29,7 @@
   
   ***
   
-  ## **Contributions**
-  
-  None
-  
-  ***
-  
-  ## **Tests**
-  
-  None
-  
-  ***
+
   
   ## **License**
   
