@@ -413,6 +413,14 @@ function editRoleOptions() {
     })
 };
 
+async function viewDepartmentBudgets() {
+        console.log(' ');
+        await db.query(`SELECT department.id, department.name, CONCAT("$", SUM(role.salary)) AS budget FROM ((employee LEFT JOIN role ON employee.role_id = role.id) LEFT JOIN department ON role.department_id = department.id) GROUP BY department.id`, (err, res) => {
+            if (err) throw err;
+            console.table(res);
+            runApp();
+        });
+    };
 // Options to make changes to departments
 function editDepartmentOptions() {
     inquirer.prompt({
@@ -422,6 +430,7 @@ function editDepartmentOptions() {
         choices: [
             "Add A New Department",
             "Remove A Department",
+            "View Department Budgets",
             "Return To Main Menu"
         ]
     }).then(responses => {
@@ -431,6 +440,9 @@ function editDepartmentOptions() {
                 break;
             case "Remove A Department":
                 removeDepartment();
+                break;
+            case "View Department Budgets":
+                viewDepartmentBudgets();
                 break;
             case "Return To Main Menu":
                 runApp();
@@ -473,7 +485,7 @@ function runApp() {
             case "Edit Departments":
                 editDepartmentOptions();
                 break;
-        }
+            }
     });
 }
 
